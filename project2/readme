@@ -1,0 +1,18 @@
+CSE 530: Assignment 4
+
+Files in Submission:
+
+	-user.c
+	-Makefile
+	-dfile1.patch
+
+Instructions for compiling the program:
+
+	1. Compile the Makefile and cross compile the user program by using the command `make`
+	2. patch the file by going to kernel directory and use command `sudo patch -p6 < dfile1.patch`
+	3. compile the kernel,copy the bzImage into the sd card and boot the galileo board
+	4. copy the user file into the galileo board using command `scp user root@ip:` 
+	5. Run the program by command `./user`
+	6. Enter the sleep value as 10
+	
+	note: only barrier_init and barrier_wait has been implemented.  
