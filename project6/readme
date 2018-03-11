@@ -1,0 +1,29 @@
+CSE 530: Assignment 2 Part 2: Platform device driver and sysfs interface for HC-SR04
+
+Files in Submission:
+
+	-hpd.c
+	-hpde.h
+	-hpde.c
+	-user.c
+	-prg.sh
+	-Makefile
+
+Instructions for compiling the program:
+
+	1. Compile the Makefile and cross compile the device driver and main program by using the command `make`
+	2. `chmod +x prg.sh`
+	3. Copy the following files to the galileo board using the following command `sudo scp filename root@'ip_of_device':/home`
+		-hpd.ko
+		-hpde.ko
+		-hpde.h
+		-user
+		-prg.sh
+	2. Insert the module hpd.ko into the kernel by using command `insmod hpd.ko n=1` where n is the number of devices
+	3. Insert the module hpde.ko using command `insmod hpde.ko` 
+	4. Run the program by command `./prg.sh`
+	5. Follow the program instructions to enter the trigger and echo pins, samples per measurement and sampling period
+ 
+
+
+
