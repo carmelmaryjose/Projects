@@ -1,0 +1,21 @@
+CSE 530: Assignment 2 A Device Driver for HC-SR04
+
+Files in Submission:
+
+	User Level File: user.c
+	Driver files: gpiod.c
+	Makefile: Makefile
+
+Instructions for compiling the program:
+
+	1. Compile the Makefile and cross compile by using the command `make`
+	2. scp the following files to the galileo board
+		-gpiod.ko
+		-user
+	2. Insert the gpiod.ko into the kernel by using command `insmod gpiod.ko n=2` where n is the number of devices
+	3. Run the program by command `./user`
+	4. Follow the user program instructions to enter the trigger and echo pins, samples per measurement and sampling period
+ 
+
+
+
