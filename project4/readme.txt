@@ -1,5 +1,5 @@
 ----------------------------------------------------
-CSE 522: Assignment 2 Schedulability Analysis
+Schedulability Analysis
 ----------------------------------------------------
 
 Files in Submission:

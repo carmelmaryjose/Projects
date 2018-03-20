@@ -1,5 +1,5 @@
 ----------------------------------------------------
-CSE 522: Assignment 1 Real-Time Task Models in Linux
+Real-Time Task Models in Linux
 ----------------------------------------------------
 
 
