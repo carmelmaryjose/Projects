@@ -16,13 +16,14 @@ Program:
 						       terminates after 3000ms
 		    P 20 500 200 L3 300 U3 400      // task 1 is a periodic task with priority 20 
 						       and a period of 500ms.
-						    // in its task body, it runs the busy loop for 
-						       200 iterations,locks mutex 3, runs busy loop 
-						       for 300 iterations, unlocks mutex 3 
-						       and finally runs 400 iterations of busy loop
-		    A 10 1 500                      // task 2 is an aperiodic task of priority 10.
-						       It is triggered by event 1 and then runs 500 
-						       iterations of busy loop
+						    // in its task body, it runs the busy loop 
+						       for 200 iterations,locks mutex 3, runs 
+						       busy loop for 300 iterations, unlocks 
+						       mutex 3 and finally runs 400 iterations of 
+						       busy loop
+		    A 10 1 500                      // task 2 is an aperiodic task of priority 
+						       10. It is triggered by event 1 and then 
+						       runs 500 iterations of busy loop
 	2. Threads are created for each task specified in data.txt. All threads are activated at the same time by using barrier. 
    	3. Event 0 and 1 arrive when we release left or right mouse clicks. The events trigger aperiodic tasks present in the taskset
 	4. At most 10 mutex locks are used for the shared resources for periodic tasks
@@ -35,8 +36,7 @@ Program:
 
 Instructions for compiling the program:
 
-	1. The MOUSE DEVICE path needs to be changed from "/dev/input/event2" to correct value as per the settings of the linux system.This 
-	   can be found through `cat /proc/bus/input/devices`  
+	1. The MOUSE DEVICE path needs to be changed from "/dev/input/event2" to correct value as per the settings of the linux system.This can be found through `cat /proc/bus/input/devices`  
 	2. Compile the Makefile for an Ubuntu system using command `make all`
 	   Compile the Makefile for a galileo board using command `make DEST='gal' all`
 	3. Scp the following files to the galileo board using command `scp filename root@ip:`

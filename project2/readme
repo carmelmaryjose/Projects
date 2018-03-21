@@ -6,6 +6,15 @@ Files in Submission:
 	-Makefile
 	-dfile1.patch
 
+Objective:
+	- Barrier synchronization is applied widely in parallel computing to synchronize the execution of parallel loops.
+	- Develop a barrier synchronization mechanism in Linux kernel which can be invokedby user processes via system call interface.
+	- mechanism consistsof 2 linux kernel system calls 
+		barrier_init: to initiate barrier in the caller's address space. Count is the number of threads that are required to be synchronized. If the barrier is initiated successfully, an integer barrier id is returned to the caller process. The timeout parameter indicatesthe maximal waiting time in nanoseconds of any participating threads. A zero or negative value in timeout implies that there is no timeout in barrier.
+		
+		barrier_wait: to wait for a barrier synchroniztion. The caller process will be blocked until the required number of threads have called the wait function, or a timeout occurs, i.e. the barrier synchronization fails
+	- To demonstrate barrier implementation, a testing program is developed that forks two child processes. In each child process, there are 5 threads to excercise the 1st barrier and additional 20 threads to use the 2nd barrier. Each thread sleeps a random amount of time before entering a new round of synchronization. the average sleep time in microsecond shoud be an input integer to the testing program. The testing program terminates after 100 rounds of synchronization  on each barrier in each child process.
+
 Instructions for compiling the program:
 
 	1. Compile the Makefile and cross compile the user program by using the command `make`

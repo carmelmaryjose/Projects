@@ -10,8 +10,7 @@ Files in Submission:
 	-Makefile
 
 Objective: 
-	- Developed platform driver for dual HC-SR04 sensors for initiation as platform and miscellaneous devices and enabled 
-	  sysfs interface for setting and reading various parameters
+	- Developed platform driver for dual HC-SR04 sensors for initiation as platform and miscellaneous devices and enabled sysfs interface for setting and reading various parameters
 
 Instructions for compiling the program:
 

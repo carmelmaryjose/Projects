@@ -7,8 +7,7 @@ Files in Submission:
 	Makefile: Makefile
 
 Objectives:
-	- Familiarized with the basic programming techniques in Linux GPIO kernel modules, GPIO pin multiplexing and TSC clock 
-	  and software structures of kernel timer and GPIO interrupts
+	- Familiarized with the basic programming techniques in Linux GPIO kernel modules, GPIO pin multiplexing and TSC clock and software structures of kernel timer and GPIO interrupts
 
 Instructions for compiling the program:
 

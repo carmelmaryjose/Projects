@@ -9,8 +9,7 @@ Files:
 
 Objective: 
 	- Implement a SPI device driver which can accept pixel information from users and light up 16 RGB LEDs of a LED ring. 
-	The LEDs of the ring are connected serially and uses a 1-wire communication protocol to receive pixel data for full 
-	color display
+	The LEDs of the ring are connected serially and uses a 1-wire communication protocol to receive pixel data for full color display
 	
 Instructions for compiling the program:
 
