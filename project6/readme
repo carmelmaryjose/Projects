@@ -9,6 +9,10 @@ Files in Submission:
 	-prg.sh
 	-Makefile
 
+Objective: 
+	- Developed platform driver for dual HC-SR04 sensors for initiation as platform and miscellaneous devices and enabled 
+	  sysfs interface for setting and reading various parameters
+
 Instructions for compiling the program:
 
 	1. Compile the Makefile and cross compile the device driver and main program by using the command `make`

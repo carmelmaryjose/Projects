@@ -11,6 +11,16 @@ Files in Submission:
 	Excel sheet: Final_Stats3.xlsx
 	Report: Report.pdf
 
+Objective:
+	1. An analysis program written in c, running in Linux without any IDE environment, reads in task parameters from the 
+	   input text file and reports that each taskset is schedulale or not
+	2. For each taskset, the analysis program considers Earliest deadline first, Rate monotonic and Deadline monotonic algorithms
+	3. The program chooses utilizatin based analysis first. If the attempt is inconclusive, the program then applies the 
+	   test approaches based on response time and loading facotr.
+	4. When response time based analysis method is used, the computed worst case response time is reported. If the loading 
+	   factor approach is used, the first missing deadline is reported
+	5. For comparative analysis, XY plots that illustrate the percentage of random task sets of various utilizations that 
+ 	   are schedulable under EDF, RM and DM is shown. The analysis needs to generate synthetic tasksets to test the schedulability. 
 
 Instructions for compiling the program:
 
